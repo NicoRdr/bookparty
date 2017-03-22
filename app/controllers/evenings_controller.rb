@@ -5,7 +5,7 @@ class EveningsController < ApplicationController
 	end
 
 	def show
-		@evening = Evening.find(params[:id])
+		# @evening = Evening.find(params[:id])
 	end
 
 	def new
