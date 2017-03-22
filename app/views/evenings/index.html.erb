@@ -1,7 +1,7 @@
 <h1>Liste Soirées </h1>
 
 <% @evenings.each do |evening|%>
-  <div class="panel panel-primary">
+<!--   <div class="panel panel-primary">
    <ul class="list-unstyled">
     <li ><%= evening.name%></li>
     <li ><%= evening.date%></li>
@@ -11,7 +11,28 @@
     <li ><%= evening.adress%></li>
     <li ><%= evening.id%></li>
   </ul>
-</div>
+</div> -->
 <hr>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <ul class="list-unstyled">
+		    <li ><%= evening.name%></li>
+		    <li ><%= evening.date%></li>
+		    <li ><%= evening.type%></li>
+		    <li ><%= evening.description%></li>
+		    <li ><%= evening.price %>€</li>
+		    <li ><%= evening.adress%></li>
+		    <li ><%= evening.id%></li>
+	  	</ul>
+	  	<%= link_to "Voir", evening_path(evening.id), class: "btn  btn-primary" %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 <% end %>
 
