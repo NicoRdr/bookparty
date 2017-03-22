@@ -1,9 +1,14 @@
 class EveningsController < ApplicationController
 
-	def new
+	def index
+		@evening = Evening.all
 	end
 
 	def show
+		@evening = Evening.find(params[:id])
+	end
+
+	def new
 	end
 
 
