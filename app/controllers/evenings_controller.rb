@@ -5,10 +5,11 @@ class EveningsController < ApplicationController
 	end
 
 	def show
-		@evening = Evening.find_by(params[:id])
+		@evening = Evening.find(params[:id])
 	end
 
 	def new
+
 	end
 
 

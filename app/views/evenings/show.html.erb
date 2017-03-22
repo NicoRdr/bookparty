@@ -1,4 +1,4 @@
-<h3>Votre Soirée: <%= @evening.name %></h3>
+<h3>Votre Soirée: <%= @evening.id %></h3>
  
  <div class="caption">
   	<ul class="list-unstyled">
@@ -6,9 +6,9 @@
 	    <li ><%= @evening.date%></li>
 	    <li ><%= @evening.type%></li>
 	    <li ><%= @evening.description%></li>
-	    <li ><%= @evening.price %>€</li>
+	    <li ><%= @evening.price%>€</li>
 	    <li ><%= @evening.adress%></li>
-	    <li ><%= @evening.id%></li>
+
 		</ul>
 		<%= link_to "Retour", root_path, class: "btn  btn-primary" %>
 		<button class= "btn btn-success">Participe</button>

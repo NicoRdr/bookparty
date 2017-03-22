@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   # root to: 'evenings#index', as: :authenticated_root
   # end
   # root to: "users#index"
-  get 'evening' => 'evenings#show'
+
+  #get 'evening' => 'evening#show'
 
   resources :evenings, only:[:index, :show]
 
