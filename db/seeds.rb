@@ -16,7 +16,7 @@ Evening.create( name: 'Mousse',
               place: 80,
               price: 10,
               adress: 'Paris',
-              type: 'DanceFloor')
+              type_evening: 'DanceFloor')
 
 Evening.create( name: 'Année 80',
               date: Date.new(2017, 04, 06),
@@ -24,7 +24,7 @@ Evening.create( name: 'Année 80',
               place: 80,
               price: 80,
               adress: 'Chartres',
-              type: 'Retro' )
+              type_evening: 'Retro' )
 
 Evening.create( name: 'Jour de l\'an',
               date: Date.new(2017, 12, 31),
@@ -32,7 +32,7 @@ Evening.create( name: 'Jour de l\'an',
               place: 100,
               price: 50,
               adress: 'La Loupe',
-              type: 'Déguisée' )
+              type_evening: 'Déguisée' )
 
 Evening.create( name: 'Electro',
               date: Date.new(2017, 06, 03),
@@ -40,4 +40,4 @@ Evening.create( name: 'Electro',
               place: 200,
               price: 30,
               adress: 'Roubaix',
-              type: 'Beuverie' )
+              type_evening: 'Beuverie' )

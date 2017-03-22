@@ -20,7 +20,7 @@ class EveningsController < ApplicationController
  # private
 
  #  def evening_params
- #    params.require(:evening).permit(:name, :date, :type, :description, :adress, :price, :place)
+ #    params.require(:evening).permit(:name, :date, :type_evening, :description, :adress, :price, :place)
  #  end
 
 end
