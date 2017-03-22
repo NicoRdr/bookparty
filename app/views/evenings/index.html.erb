@@ -1,0 +1,27 @@
+<h3>Liste Soirées <span class="badge"><%= @evenings.count %></span> </h3>
+
+
+
+<% @evenings.each do |evening|%>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="assets/images/partylogo.png" alt="Logo">
+        <div class="caption">
+          <ul class="list-unstyled">
+  		    <li ><%= evening.name%></li>
+  		    <li ><%= evening.date%></li>
+  		    <li ><%= evening.type_evening%></li>
+  		    <li ><%= evening.description%></li>
+  		    <li ><%= evening.price%>€</li>
+  		    <li ><%= evening.adress%></li>
+  		    <li ><%= evening.id%></li>
+  	  	</ul>
+  	  	  <%= link_to "Voir", evening_path(evening.id), class: "btn  btn-primary" %>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>
+<% end %>
+
