@@ -5,7 +5,7 @@ class EveningsController < ApplicationController
 	end
 
 	def show
-		@evening = Evening.find(params[:id])
+		@evening = Evening.find_by(params[:id])
 	end
 
 	def new
@@ -14,4 +14,12 @@ class EveningsController < ApplicationController
 
 	def create
 	end
+
+
+ # private
+
+ #  def evening_params
+ #    params.require(:evening).permit(:name, :date, :type, :description, :adress, :price, :place)
+ #  end
+
 end
