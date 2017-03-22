@@ -1,11 +1,11 @@
 class EveningsController < ApplicationController
 
 	def index
-		@evening = Evening.all
+		@evenings= Evening.all
 	end
 
 	def show
-		# @evening = Evening.find(params[:id])
+		@evening = Evening.find(params[:id])
 	end
 
 	def new

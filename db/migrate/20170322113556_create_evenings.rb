@@ -2,7 +2,7 @@ class CreateEvenings < ActiveRecord::Migration[5.0]
   def change
     create_table :evenings do |t|
       t.string :name
-      t.string :type
+      t.string :type_of
       t.date :date
       t.text :description
       t.integer :price

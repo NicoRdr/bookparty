@@ -1,2 +1,17 @@
-<h1>Liste Soirées</h1>
+<h1>Liste Soirées </h1>
+
+<% @evenings.each do |evening|%>
+  <div class="panel panel-primary">
+   <ul class="list-unstyled">
+    <li ><%= evening.name%></li>
+    <li ><%= evening.date%></li>
+    <li ><%= evening.type%></li>
+    <li ><%= evening.description%></li>
+    <li ><%= evening.price %>€</li>
+    <li ><%= evening.adress%></li>
+    <li ><%= evening.id%></li>
+  </ul>
+</div>
+<hr>
+<% end %>
 
