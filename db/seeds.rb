@@ -15,29 +15,29 @@ Evening.create( name: 'Mousse',
               description: 'Soirée mousse, apportez vos maillots de bain et serviettes !',
               place: 80,
               price: 10,
-              adress: 'Paris')
-              # type_of: 'DanceFloor')
+              adress: 'Paris',
+              type: 'DanceFloor')
 
 Evening.create( name: 'Année 80',
               date: Date.new(2017, 04, 06),
               description: 'Revivez les années 80 sans la coupe de cheveux !',
               place: 80,
               price: 80,
-              adress: 'Chartres')
-              # type_of: 'Retro' )
+              adress: 'Chartres',
+              type: 'Retro' )
 
 Evening.create( name: 'Jour de l\'an',
               date: Date.new(2017, 12, 31),
               description: 'Fetez la nouvelle année avec la Companie Créole et Kassav',
               place: 100,
               price: 50,
-              adress: 'La Loupe')
-              # type_of: 'Déguisée' )
+              adress: 'La Loupe',
+              type: 'Déguisée' )
 
 Evening.create( name: 'Electro',
               date: Date.new(2017, 06, 03),
               description: 'Soirée remix music...',
               place: 200,
               price: 30,
-              adress: 'Roubaix')
-              # type_of: 'Beuverie' )
+              adress: 'Roubaix',
+              type: 'Beuverie' )
