@@ -13,6 +13,6 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :users
-  # resources :evenings, only:[:index, :show]
+  resources :evenings, only:[:index, :show, :new, :create, :destroy, :delete]
 
 end
