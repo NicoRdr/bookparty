@@ -1,4 +1,4 @@
 class Evening < ApplicationRecord
-  has_many :users
-  has_many :users, through :participations
+  has_many :participations
+  has_many :users, through: :participations
 end
